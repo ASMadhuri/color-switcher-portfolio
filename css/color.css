@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
+:root{
+        --yellow: #8e44ad;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* outline: none; */
+    /* border: none; */
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+.color-switcher{
+    position: fixed;
+    top: 0px;
+    right: -200px; 
+    /* left: 0;   */
+    width: 200px;
+    padding: 10px;
+    background: #fff;
+    /* z-index: 1000; */
+}
+.color-switcher.active{
+    right: 0px;
+}
+/* .color-switcher h3{
+    color: var(--yellow);
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #3333;
+    padding: 5px 0;
+    text-align:center;
+} */
+.color-switcher .switcher-btn{
+    position: absolute;
+    top: 0;
+    left: -75px; 
+    /* right: 180px; */
+    /* left: 180px; */
+    color: var(--yellow);
+    background: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 35px;
+}
+.color-switcher .switcher-btn i{
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.color-switcher .theme-buttons-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.color-switcher .theme-buttons-container .themes-buttons{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 2.2px;
+    cursor: pointer;
+}
+@media (max-width:991px){
+    .color-switcher{
+        position: fixed;
+        top: 70px;
+        right: -70px; 
+        /* left: 0;   */
+        width: 60px;
+        padding: 6px;
+        background: #fff;
+        /* z-index: 1000; */
+    }
+    .color-switcher.active{
+        right: 0px;
+    }
+    .color-switcher .switcher-btn{
+        position: absolute;
+        top: 0px;
+        /* left: -75px;  */
+        /* right: 180px; */
+        /* left: 180px; */
+        color: var(--yellow);
+        background: #fff;
+        padding: 5px 20px;
+        cursor: pointer;
+        font-size: 35px;
+    }
+    .color-switcher .theme-buttons-container{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .color-switcher .theme-buttons-container .themes-buttons{
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 3px;
+        cursor: pointer;
+    }
+}
+@media (max-width:750px){
+    .color-switcher{
+        position: fixed;
+        top: 30%;
+        right: -50px; 
+        /* left: 0;   */
+        width: fit-content;
+        padding: 5px;
+        background: #fff;
+         z-index: 1000; 
+    }
+    .color-switcher.active{
+        right: 0px;
+    }
+    .color-switcher .switcher-btn{
+        position: absolute;
+        top: 0px;
+        /* left: -75px;  */
+        /* right: 180px; */
+        /* left: 180px; */
+        color: var(--yellow);
+        background: #fff;
+        padding: 5px 18px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .color-switcher .theme-buttons-container{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .color-switcher .theme-buttons-container .themes-buttons{
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 3px 0px;
+        cursor: pointer;
+    }
+}
+@media (max-width:550px){
+    .color-switcher{
+        position: fixed;
+        top: 45%;
+        right: -50px; 
+        /* left: 0;   */
+        width: fit-content;
+        padding: 5px;
+        background: #fff;
+         z-index: 1000; 
+    }
+    .color-switcher.active{
+        right: 0px;
+    }
+    .color-switcher .switcher-btn{
+        position: absolute;
+        top: 0px;
+        /* left: -75px;  */
+        /* right: 180px; */
+        /* left: 180px; */
+        color: var(--yellow);
+        background: #fff;
+        padding: 5px 18px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .color-switcher .theme-buttons-container{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .color-switcher .theme-buttons-container .themes-buttons{
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 3px 0px;
+        cursor: pointer;
+    }
+}
+@media (max-width:430px){
+    .color-switcher{
+        position: fixed;
+        top: 12%;
+        right: -50px; 
+        /* left: 0;   */
+        width: fit-content;
+        padding: 5px;
+        background: #fff;
+         z-index: 1000; 
+    }
+    .color-switcher.active{
+        right: 0px;
+    }
+    .color-switcher .switcher-btn{
+        position: absolute;
+        top: 0px;
+        /* left: -75px;  */
+        /* right: 180px; */
+        /* left: 180px; */
+        color: var(--yellow);
+        background: #fff;
+        padding: 5px 18px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .color-switcher .theme-buttons-container{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .color-switcher .theme-buttons-container .themes-buttons{
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 3px 0px;
+        cursor: pointer;
+    }
+}
+@media (max-width:400px){
+    .color-switcher{
+        position: fixed;
+        top: 45%;
+        right: -50px; 
+        /* left: 0;   */
+        width: fit-content;
+        padding: 5px;
+        background: #fff;
+         z-index: 1000; 
+    }
+    .color-switcher.active{
+        right: 0px;
+    }
+    .color-switcher .switcher-btn{
+        position: absolute;
+        top: 0px;
+        /* left: -75px;  */
+        /* right: 180px; */
+        /* left: 180px; */
+        color: var(--yellow);
+        background: #fff;
+        padding: 5px 18px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .color-switcher .theme-buttons-container{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .color-switcher .theme-buttons-container .themes-buttons{
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 3px 0px;
+        cursor: pointer;
+    }
+}
+@media (max-width:300px){
+    .color-switcher{
+        position: fixed;
+        top: 30%;
+        right: -50px; 
+        /* left: 0;   */
+        width: fit-content;
+        padding: 5px;
+        background: #fff;
+         z-index: 1000; 
+    }
+    .color-switcher.active{
+        right: 0px;
+    }
+    .color-switcher .switcher-btn{
+        position: absolute;
+        top: 0;
+        /* left: -75px;  */
+        /* right: 180px; */
+        /* left: 180px; */
+        /* right: 0; */
+        color: var(--yellow);
+        background: #fff;
+        padding: 5px 10px;
+        /* padding-left: 10px; */
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .color-switcher .theme-buttons-container{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .color-switcher .theme-buttons-container .themes-buttons{
+        display: block;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin: 3px 0px;
+        cursor: pointer;
+    }
+}
+
+
+
+
